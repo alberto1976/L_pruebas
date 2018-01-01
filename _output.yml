@@ -1,5 +1,6 @@
 bookdown::gitbook:
   css: style.css
+  download: [pdf, epub, mobi]
   split_by: chapter
   config:
     toc:
@@ -8,3 +9,5 @@ bookdown::gitbook:
         <li><a href="./">Libro de pruebas</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+bookdown::epub_book:
+  stylesheet: style.css

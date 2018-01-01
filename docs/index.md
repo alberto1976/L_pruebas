@@ -1,15 +1,13 @@
 --- 
-title: "A Minimal Bookdown Book"
-author: "Sean Kross"
+title: "Libro de pruebas con bookdown"
+author: "Alberto Rodríguez R"
 date: "2018-01-01"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: seankross/bookdown-start
-url: 'http\://seankross.com/bookdown-start/'
-description: "Everything you need (and nothing more) to start a bookdown book."
+description: "Libro de ejemplo con las cpacidades de bookdown"
 ---
 
 # Preface {-}
