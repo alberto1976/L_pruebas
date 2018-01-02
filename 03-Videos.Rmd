@@ -33,6 +33,6 @@ Este ejemplo produce el siguiente video:
 library(vembedr)
 library(htmltools)
 
-div(align="center", embed_youtube(id="seEIJvhRPfg"))
+div(align="center", embed_youtube(id="seEIJvhRPfg", width=640, height=360))
 
 ```

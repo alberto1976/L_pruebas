@@ -30,5 +30,5 @@ div(align="center", embed_youtube(id="3YhQAiHTS2c"))
 Este ejemplo produce el siguiente video:
 
 <!--html_preserve--><div align="center">
-<iframe src="https://www.youtube.com/embed/seEIJvhRPfg" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
+<iframe src="https://www.youtube.com/embed/seEIJvhRPfg" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
 </div><!--/html_preserve-->
