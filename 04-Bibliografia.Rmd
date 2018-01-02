@@ -4,7 +4,7 @@ En este capítulo se presentan las principales características que nos ofrece e
 
 ## ¿Cómo crear notas al pie?
 
-Colombia ^[Este país está conformado por 45 millones de habitantes aproximadamente] está ubicado en suramerica. 
+Colombia ^[Este país está conformado por 45 millones de habitantes aproximadamente. Para mayores detalles ver información más específica de este [país](https://es.wikipedia.org/wiki/Colombia) de América Latina] está ubicado en suramerica. 
 
 
 ## ¿Cómo crear una referencia Cruzada?
