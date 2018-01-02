@@ -25,7 +25,7 @@ A continuación se presenta el código de insersión de videos en R
 ```yaml
 library(vembedr)
 library(htmltools)
-div(align="center", embed_youtube(id="3YhQAiHTS2c"))
+div(align="center", embed_youtube(id="seEIJvhRPfg", width=640, height=360))
 ```
 Este ejemplo produce el siguiente video:
 
