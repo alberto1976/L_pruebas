@@ -33,7 +33,7 @@
   
   
 <link rel="prev" href="imagenes-y-videos.html">
-<link rel="next" href="graficos-interactivos-con-htmlwidges.html">
+<link rel="next" href="Interactivos.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -111,9 +111,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.2" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html#videos"><i class="fa fa-check"></i><b>3.2</b> Videos</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html"><i class="fa fa-check"></i><b>4</b> Bibliografia y Referencias</a><ul>
-<li class="chapter" data-level="4.1" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-ingresar-una-referencia-bibliografica"><i class="fa fa-check"></i><b>4.1</b> ¿Cómo ingresar una referencia bibliográfica?</a></li>
+<li class="chapter" data-level="4.1" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-crear-notas-al-pie"><i class="fa fa-check"></i><b>4.1</b> ¿Cómo crear notas al pie?</a></li>
+<li class="chapter" data-level="4.2" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-crear-una-referencia-cruzada"><i class="fa fa-check"></i><b>4.2</b> ¿Cómo crear una referencia Cruzada?</a></li>
+<li class="chapter" data-level="4.3" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-ingresar-una-referencia-bibliografica"><i class="fa fa-check"></i><b>4.3</b> ¿Cómo ingresar una referencia bibliográfica?</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="graficos-interactivos-con-htmlwidges.html"><a href="graficos-interactivos-con-htmlwidges.html"><i class="fa fa-check"></i><b>5</b> Gráficos interactivos con htmlwidges</a></li>
+<li class="chapter" data-level="5" data-path="Interactivos.html"><a href="Interactivos.html"><i class="fa fa-check"></i><b>5</b> Gráficos interactivos con htmlwidges</a></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -138,10 +140,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="bibliografia-y-referencias" class="section level1">
 <h1><span class="header-section-number">Capítulo 4</span> Bibliografia y Referencias</h1>
 <p>En este capítulo se presentan las principales características que nos ofrece el paquete bookdown para la gestión de referencias bibliográficas, notas, referencias cruzadas, etc.</p>
+<div id="como-crear-notas-al-pie" class="section level2">
+<h2><span class="header-section-number">4.1</span> ¿Cómo crear notas al pie?</h2>
+<p>Colombia<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> está ubicado en suramerica.</p>
+</div>
+<div id="como-crear-una-referencia-cruzada" class="section level2">
+<h2><span class="header-section-number">4.2</span> ¿Cómo crear una referencia Cruzada?</h2>
+<p>Como se presentó en el <a href="Interactivos.html#Interactivos">Capítulo 5</a>, existe un número elevado de posibilidades gráficas para la construcción de gráficos interactivos soportados en librerías de JavaScrip…</p>
+</div>
 <div id="como-ingresar-una-referencia-bibliografica" class="section level2">
-<h2><span class="header-section-number">4.1</span> ¿Cómo ingresar una referencia bibliográfica?</h2>
+<h2><span class="header-section-number">4.3</span> ¿Cómo ingresar una referencia bibliográfica?</h2>
 <p>Como se presenta en el libro <strong>Cuestión de Supervivencia</strong><span class="citation">(Pinto et al. <a href="#ref-pinto2007cuestion">2007</a>)</span>, la deserción estudiantil</p>
-<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="bn">`r if (knitr:::is_html_output()) &#39;# References {-}&#39;`</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="bn">`r if (knitr:::is_html_output()) &#39;# Referencias {-}&#39;`</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="ot">---</span>
 <span class="fu">bibliography:</span><span class="at"> </span><span class="kw">[</span>Referencias/capitulo4.bib<span class="kw">]</span>
 <span class="fu">biblio-style:</span><span class="at"> apalike</span>
@@ -162,13 +172,19 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Pinto, Martha, D Durán, R Pérez, C Reverón, and A Rodríguez. 2007. “Cuestión de Supervivencia. Graduación, Deserción Y Rezago En La Universidad Nacional de Colombia.” <em>Universidad Nacional de Colombia. Dirección Nacional de Bienestar Universitario, Bogotá</em>.</p>
 </div>
 </div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Este país está conformado por 45 millones de habitantes aproximadamente<a href="bibliografia-y-referencias.html#fnref1">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
         </div>
       </div>
 <a href="imagenes-y-videos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="graficos-interactivos-con-htmlwidges.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="Interactivos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
