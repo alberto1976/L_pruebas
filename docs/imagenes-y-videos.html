@@ -108,7 +108,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2" data-path="diving-in.html"><a href="diving-in.html"><i class="fa fa-check"></i><b>2</b> Diving In</a></li>
 <li class="chapter" data-level="3" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html"><i class="fa fa-check"></i><b>3</b> Imágenes y videos</a><ul>
 <li class="chapter" data-level="3.1" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html#imagenes"><i class="fa fa-check"></i><b>3.1</b> Imágenes</a></li>
-<li class="chapter" data-level="3.2" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html#videos"><i class="fa fa-check"></i><b>3.2</b> Videos</a></li>
+<li class="chapter" data-level="3.2" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html#videos"><i class="fa fa-check"></i><b>3.2</b> Videos</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html#desde-html"><i class="fa fa-check"></i><b>3.2.1</b> Desde HTML</a></li>
+<li class="chapter" data-level="3.2.2" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html#desde-paquete-vembedr"><i class="fa fa-check"></i><b>3.2.2</b> Desde paquete vembedr</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html"><i class="fa fa-check"></i><b>4</b> Bibliografia y Referencias</a><ul>
 <li class="chapter" data-level="4.1" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-crear-notas-al-pie"><i class="fa fa-check"></i><b>4.1</b> ¿Cómo crear notas al pie?</a></li>
@@ -146,6 +149,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="videos" class="section level2">
 <h2><span class="header-section-number">3.2</span> Videos</h2>
+<div id="desde-html" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Desde HTML</h3>
 <!DOCTYPE html>
 <html>
 <center>
@@ -153,7 +158,19 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </iframe>
 </center>
 </html>
+</div>
+<div id="desde-paquete-vembedr" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Desde paquete vembedr</h3>
+<p>A continuación se presenta el código de insersión de videos en R</p>
+<div class="sourceCode"><pre class="sourceCode yaml"><code class="sourceCode yaml">library(vembedr)
+library(htmltools)
+div(align=<span class="st">&quot;center&quot;</span>, embed_youtube(id=<span class="st">&quot;3YhQAiHTS2c&quot;</span>))</code></pre></div>
+<p>Este ejemplo produce el siguiente video:</p>
+<div align="center">
+<iframe src="https://www.youtube.com/embed/seEIJvhRPfg" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
+</div>
 
+</div>
 </div>
 </div>
             </section>

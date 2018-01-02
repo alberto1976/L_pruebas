@@ -8,9 +8,27 @@ Imágenes ...
 
 ## Videos
 
+
+### Desde HTML
+
 <!DOCTYPE html>
 <html>
 <center>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/seEIJvhRPfg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </center>
 </html>
+
+### Desde paquete vembedr
+
+A continuación se presenta el código de insersión de videos en R
+
+```yaml
+library(vembedr)
+library(htmltools)
+div(align="center", embed_youtube(id="3YhQAiHTS2c"))
+```
+Este ejemplo produce el siguiente video:
+
+<!--html_preserve--><div align="center">
+<iframe src="https://www.youtube.com/embed/seEIJvhRPfg" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
+</div><!--/html_preserve-->
