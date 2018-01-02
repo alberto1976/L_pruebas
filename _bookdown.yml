@@ -3,7 +3,7 @@ chapter_name: "Capítulo "
 repo: https://github.com/seankross/bookdown-start
 output_dir: docs
 rmd_files: ["index.Rmd", "01-Introduction.Rmd", "02-Diving-In.Rmd", 
-            "03-Work-In-Progress.Rmd", "04-Bibliografia.Rmd", 
+            "03-Videos.Rmd", "04-Bibliografia.Rmd", 
             "05-Interactivos.Rmd", "10-Referencias.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
