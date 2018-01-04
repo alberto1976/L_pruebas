@@ -11,6 +11,10 @@ Colombia ^[Este país está conformado por 45 millones de habitantes aproximadam
 
 Como se presentó en el [Capítulo 5](#Interactivos), existe un número elevado de posibilidades gráficas para la construcción de gráficos interactivos soportados en librerías de JavaScrip...
 
+## ¿Cómo crear una Referencia a una ecuación?
+
+Como se presentó en la ecuación \@ref(eq:binom), las tasas son...
+
 ## ¿Cómo ingresar una referencia bibliográfica?
 
 Como se presenta en el libro **Cuestión de Supervivencia**[@pinto2007cuestion], la deserción estudiantil 

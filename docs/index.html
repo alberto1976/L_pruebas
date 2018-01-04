@@ -25,7 +25,7 @@
 <meta name="author" content="Alberto Rodríguez R">
 
 
-<meta name="date" content="2018-01-03">
+<meta name="date" content="2018-01-04">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -103,9 +103,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="./">Libro de pruebas</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="diving-in.html"><a href="diving-in.html"><i class="fa fa-check"></i><b>2</b> Diving In</a></li>
+<li class="chapter" data-level="2" data-path="ecuaciones-y-formulas.html"><a href="ecuaciones-y-formulas.html"><i class="fa fa-check"></i><b>2</b> Ecuaciones y formulas</a><ul>
+<li class="chapter" data-level="2.1" data-path="ecuaciones-y-formulas.html"><a href="ecuaciones-y-formulas.html#ecuaciones"><i class="fa fa-check"></i><b>2.1</b> Ecuaciones</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html"><i class="fa fa-check"></i><b>3</b> Imágenes y videos</a><ul>
 <li class="chapter" data-level="3.1" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html#imagenes"><i class="fa fa-check"></i><b>3.1</b> Imágenes</a></li>
 <li class="chapter" data-level="3.2" data-path="imagenes-y-videos.html"><a href="imagenes-y-videos.html#videos"><i class="fa fa-check"></i><b>3.2</b> Videos</a><ul>
@@ -116,7 +118,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html"><i class="fa fa-check"></i><b>4</b> Bibliografia y Referencias</a><ul>
 <li class="chapter" data-level="4.1" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-crear-notas-al-pie"><i class="fa fa-check"></i><b>4.1</b> ¿Cómo crear notas al pie?</a></li>
 <li class="chapter" data-level="4.2" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-crear-una-referencia-cruzada"><i class="fa fa-check"></i><b>4.2</b> ¿Cómo crear una referencia Cruzada?</a></li>
-<li class="chapter" data-level="4.3" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-ingresar-una-referencia-bibliografica"><i class="fa fa-check"></i><b>4.3</b> ¿Cómo ingresar una referencia bibliográfica?</a></li>
+<li class="chapter" data-level="4.3" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-crear-una-referencia-a-una-ecuacion"><i class="fa fa-check"></i><b>4.3</b> ¿Cómo crear una Referencia a una ecuación?</a></li>
+<li class="chapter" data-level="4.4" data-path="bibliografia-y-referencias.html"><a href="bibliografia-y-referencias.html#como-ingresar-una-referencia-bibliografica"><i class="fa fa-check"></i><b>4.4</b> ¿Cómo ingresar una referencia bibliográfica?</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="Interactivos.html"><a href="Interactivos.html"><i class="fa fa-check"></i><b>5</b> Gráficos interactivos con htmlwidges</a></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
@@ -143,11 +146,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="header">
 <h1 class="title">Libro de pruebas con bookdown</h1>
 <h4 class="author"><em>Alberto Rodríguez R</em></h4>
-<h4 class="date"><em>2018-01-03</em></h4>
+<h4 class="date"><em>2018-01-04</em></h4>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>This is the very first part of the book.</p>
+<div id="prefacio" class="section level1 unnumbered">
+<h1>Prefacio</h1>
+<p>Esta es la primera parte del libro.</p>
 
 </div>
             </section>
@@ -196,6 +199,17 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

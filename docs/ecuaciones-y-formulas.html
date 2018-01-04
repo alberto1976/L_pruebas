@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="imagenes-y-videos.html">
-<link rel="next" href="Interactivos.html">
+<link rel="prev" href="introduction.html">
+<link rel="next" href="imagenes-y-videos.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -143,58 +143,36 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="bibliografia-y-referencias" class="section level1">
-<h1><span class="header-section-number">Capítulo 4</span> Bibliografia y Referencias</h1>
-<p>En este capítulo se presentan las principales características que nos ofrece el paquete bookdown para la gestión de referencias bibliográficas, notas, referencias cruzadas, etc.</p>
-<div id="como-crear-notas-al-pie" class="section level2">
-<h2><span class="header-section-number">4.1</span> ¿Cómo crear notas al pie?</h2>
-<p>Colombia<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> está ubicado en suramerica.</p>
-</div>
-<div id="como-crear-una-referencia-cruzada" class="section level2">
-<h2><span class="header-section-number">4.2</span> ¿Cómo crear una referencia Cruzada?</h2>
-<p>Como se presentó en el <a href="Interactivos.html#Interactivos">Capítulo 5</a>, existe un número elevado de posibilidades gráficas para la construcción de gráficos interactivos soportados en librerías de JavaScrip…</p>
-</div>
-<div id="como-crear-una-referencia-a-una-ecuacion" class="section level2">
-<h2><span class="header-section-number">4.3</span> ¿Cómo crear una Referencia a una ecuación?</h2>
-<p>Como se presentó en la ecuación <a href="ecuaciones-y-formulas.html#eq:binom">(2.1)</a>, las tasas son…</p>
-</div>
-<div id="como-ingresar-una-referencia-bibliografica" class="section level2">
-<h2><span class="header-section-number">4.4</span> ¿Cómo ingresar una referencia bibliográfica?</h2>
-<p>Como se presenta en el libro <strong>Cuestión de Supervivencia</strong><span class="citation">(Pinto et al. <a href="#ref-pinto2007cuestion">2007</a>)</span>, la deserción estudiantil</p>
-<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="bn">`r if (knitr:::is_html_output()) &#39;# Referencias {-}&#39;`</span></code></pre></div>
-<div class="sourceCode"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="ot">---</span>
-<span class="fu">bibliography:</span><span class="at"> </span><span class="kw">[</span>Referencias/capitulo4.bib<span class="kw">]</span>
-<span class="fu">biblio-style:</span><span class="at"> apalike</span>
-<span class="fu">link-citations:</span><span class="at"> yes</span>
-<span class="ot">---</span></code></pre></div>
-<div class="sourceCode"><pre class="sourceCode bibtex"><code class="sourceCode bibtex"><span class="va">@article</span>{<span class="ot">pinto2007cuestion</span>,
-  <span class="dt">title</span>={Cuesti{<span class="ch">\&#39;</span>o}n de supervivencia. Graduaci{<span class="ch">\&#39;</span>o}n, deserci{<span class="ch">\&#39;</span>o}n y rezago en la Universidad Nacional de Colombia},
-  <span class="dt">author</span>={Pinto, Martha and Dur{<span class="ch">\&#39;</span>a}n, D and P{<span class="ch">\&#39;</span>e}rez, R and Rever{<span class="ch">\&#39;</span>o}n, C and Rodr{<span class="ch">\&#39;\i</span>}guez, A},
-  <span class="dt">journal</span>={Universidad Nacional de Colombia. Direcci{<span class="ch">\&#39;</span>o}n Nacional de Bienestar Universitario, Bogot{<span class="ch">\&#39;</span>a}},
-  <span class="dt">year</span>={2007}
-}</code></pre></div>
+<div id="ecuaciones-y-formulas" class="section level1">
+<h1><span class="header-section-number">Capítulo 2</span> Ecuaciones y formulas</h1>
+<div id="ecuaciones" class="section level2">
+<h2><span class="header-section-number">2.1</span> Ecuaciones</h2>
+<p>A continuación se presenta una ecuación</p>
+<p><span class="math display" id="eq:binom">\[
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  \tag{2.1}
+\end{equation} 
+\]</span></p>
+<p>Ahora en un entorno alineado</p>
+<p><span class="math display" id="eq:align">\[
+\begin{align} 
+g(X_{n}) &amp;= g(\theta)+g&#39;({\tilde{\theta}})(X_{n}-\theta) \notag \\
+\sqrt{n}[g(X_{n})-g(\theta)] &amp;= g&#39;\left({\tilde{\theta}}\right)
+  \sqrt{n}[X_{n}-\theta ] 
+  \tag{2.2}
+\end{align} 
+\]</span></p>
 
 </div>
-</div>
-<h3>Referencias</h3>
-<div id="refs" class="references">
-<div id="ref-pinto2007cuestion">
-<p>Pinto, Martha, D Durán, R Pérez, C Reverón, and A Rodríguez. 2007. “Cuestión de Supervivencia. Graduación, Deserción Y Rezago En La Universidad Nacional de Colombia.” <em>Universidad Nacional de Colombia. Dirección Nacional de Bienestar Universitario, Bogotá</em>.</p>
-</div>
-</div>
-<div class="footnotes">
-<hr />
-<ol start="1">
-<li id="fn1"><p>Este país está conformado por 45 millones de habitantes aproximadamente. Para mayores detalles ver información más específica de este <a href="https://es.wikipedia.org/wiki/Colombia">país</a> de América Latina<a href="bibliografia-y-referencias.html#fnref1">↩</a></p></li>
-</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="imagenes-y-videos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="Interactivos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="imagenes-y-videos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
