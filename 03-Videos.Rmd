@@ -11,6 +11,15 @@ Imágenes ...
 
 ### Desde HTML
 
+```
+<!DOCTYPE html>
+<html>
+<center>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/seEIJvhRPfg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</center>
+</html>
+```
+
 <!DOCTYPE html>
 <html>
 <center>
